@@ -1,70 +1,86 @@
-# AI-Powered LinkedIn Content Automation
+# 🤖 AI-Powered LinkedIn Content Automation
 
-An automation project built using **n8n** and **Google Gemini** to generate and publish LinkedIn content automatically.
+> An AI-powered workflow built with **n8n** and **Google Gemini** to automate LinkedIn content creation and publishing.
 
-## 🚀 Project Overview
+## 🚀 About the Project
 
-This project takes a news/article link from Google Sheets, uses Google Gemini to analyze the content and generate a professional LinkedIn post, and then automatically publishes the post to LinkedIn.
+This project automates the process of creating and publishing LinkedIn content from a news/article link.
+
+A link is added to **Google Sheets**, and the n8n workflow processes it using **Google Gemini** to generate content and then publishes the final post automatically to LinkedIn.
 
 ## 🔄 Workflow
 
 ```text
-Google Sheets
-      ↓
-Google Gemini
-      ↓
-AI-generated summary
-      ↓
-AI-generated LinkedIn post
-      ↓
-LinkedIn
+📰 Article / News Link
+        ↓
+📊 Google Sheets
+        ↓
+⚡ n8n Workflow
+        ↓
+🤖 Google Gemini
+        ↓
+📝 AI-Generated LinkedIn Post
+        ↓
+💼 LinkedIn
+        ↓
+🚀 Published Automatically
 ```
 
 ## 🛠️ Technologies Used
 
-* n8n
-* Google Sheets
-* Google Gemini
-* LinkedIn
-* Workflow Automation
-* AI Content Generation
+* **n8n** — Workflow automation
+* **Google Sheets** — Input source
+* **Google Gemini** — AI content generation
+* **LinkedIn** — Automatic publishing
 
 ## ⚙️ How It Works
 
-1. A news/article link is added to Google Sheets.
-2. n8n detects the update.
-3. Google Gemini analyzes the article information.
+1. Add a news/article link to Google Sheets.
+2. The n8n workflow detects the update.
+3. Google Gemini analyzes the provided information.
 4. Gemini generates a concise summary.
-5. A second Gemini step converts the information into a professional LinkedIn post.
-6. n8n automatically publishes the generated post on LinkedIn.
+5. A second AI step converts the summary into a professional LinkedIn post.
+6. The generated post is automatically published to LinkedIn.
+
+## 📸 Workflow Preview
+
+![n8n Workflow](workflow.png)
 
 ## 🎯 What I Learned
 
 Through this project, I gained hands-on experience with:
 
-* Building workflows using n8n
-* Integrating Google Gemini with automation workflows
-* Connecting multiple applications together
+* Building automation workflows using n8n
+* Integrating Google Gemini into workflows
+* Connecting multiple platforms together
 * Working with AI-generated content
-* Understanding basic API and workflow concepts
-* Automating repetitive content creation tasks
+* Automating repetitive tasks
+* Understanding workflow and API-based integrations
 
 ## 📚 Learning Journey
 
-I built this project as part of my learning journey with **NxtWave**, where I explored AI, automation, and workflow-based applications.
+I built this project as part of my learning journey with **NxtWave**.
 
-This project helped me move from learning concepts to actually building and testing a working automation.
+The goal was to take what I learned about AI and workflow automation and turn it into a working project.
+
+This project helped me understand how different tools can be connected together to create a practical end-to-end automation.
 
 ## 🔮 Future Improvements
 
-* Add AI-generated images to LinkedIn posts
-* Prevent duplicate article postings
-* Add post scheduling
-* Track published posts in Google Sheets
-* Improve content personalization
+* 🖼️ Add AI-generated images to LinkedIn posts
+* 🚫 Prevent duplicate article posts
+* ⏰ Add scheduled posting
+* 📊 Track published posts in Google Sheets
+* ✨ Improve content personalization
 
-## 👨‍💻 Author
+## ⚠️ Note
 
-**THOD2006**
+The workflow JSON included in this repository is a **sanitized portfolio version**. Credentials and private account information have been removed.
 
-Learning, building, and experimenting with AI and automation.
+To run the workflow, users need to configure their own Google Sheets, Google Gemini, and LinkedIn credentials in n8n.
+
+## 👨‍💻 About Me
+
+I'm currently learning and building projects around **AI, automation, and technology**.
+
+This is one of my first hands-on automation projects, and I'm excited to keep learning and building more. 🚀
